@@ -24,13 +24,7 @@ namespace WordPressOnCore.PeachPie
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddWordPress(options =>
-            {
-                // options.SiteUrl =
-                // options.HomeUrl = "http://localhost:5004";
-
-                // options.PluginContainer.Add(new DashboardPlugin());
-            });
+            services.AddWordPress(options =>{});
             services.AddRazorPages();
         }
 
